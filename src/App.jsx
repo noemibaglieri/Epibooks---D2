@@ -3,7 +3,9 @@ import MyNav from "./components/MyNav.jsx";
 import Welcome from "./components/Welcome.jsx";
 import MyFooter from "./components/MyFooter.jsx";
 import { Container } from "react-bootstrap";
-import AllTheBooks from "./components/AllTheBooks.jsx";
+import BookList from "./components/BookList.jsx";
+import fantasy from "./data/books/fantasy.json";
+import horror from "./data/books/horror.json";
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <MyNav />
       <Container>
         <Welcome />
-        <AllTheBooks />
+        <BookList books={horror} />
+        <BookList books={fantasy} />
       </Container>
       <MyFooter />
     </>

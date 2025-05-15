@@ -11,6 +11,10 @@ ul {
   height: 35rem;
 }
 
+.card-border {
+  outline: 3px solid green;
+}
+
 /* .card-img {
   height: "400px";
   object-fit: "cover";
